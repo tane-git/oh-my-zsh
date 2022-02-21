@@ -1,7 +1,7 @@
 add-this () {
   # add-this <alias> <command>
   # echo "alias "$1"='"$2"'" >> /home/tane_wilson/.oh-my-zsh/custom/aliases.zsh
-  echo "alias "$1"='"$2"'" >> /Users/tane/.oh-my-zsh/custom
+  echo "alias "$1"='"$2"'" >> /Users/tane/.oh-my-zsh/custom/aliases.zsh
   source ~/.zshrc
 }
 
