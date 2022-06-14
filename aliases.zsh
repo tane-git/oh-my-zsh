@@ -36,9 +36,10 @@ alias gac='gaa && gcmsg'
 # Subquery Projects:
 alias subquery='cd code/subquery'
 alias explorer='cd ~/code/subquery/projects/subquery-explorer'
-alias console='cd code/subquery/projects/subquery-console'
+alias console='cd code/subquery/projects/HOSTED_SERVICES/subquery-console'
 alias website='cd ~/code/subquery/projects/subquery-website'
 alias ui-library='cd ~/Code/subQuery/Projects/LIBRARIES/subquery-ui'
 alias libraries='cd ~/code/subquery/projects/libraries'
 
 # New:
+alias yd='yarn dev'
