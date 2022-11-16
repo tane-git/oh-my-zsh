@@ -1,13 +1,15 @@
 add () {
-  # add-this <alias> <command>
-  # echo "alias "$1"='"$2"'" >> /home/tane_wilson/.oh-my-zsh/custom/aliases.zsh
+  # add <alias> <command>
   echo "alias "$1"='"$2"'" >> /Users/tane/.oh-my-zsh/custom/aliases.zsh
   source ~/.zshrc
 }
 
 gacp () {
   gaa && gcmsg "$1" && ggp
-  # echo "gaa && gcmsg '$1' && ggp"
+}
+
+nt () {
+  git fetch && "$1"
 }
 
 alias aliases='code /Users/tane/.oh-my-zsh/custom'
@@ -20,26 +22,40 @@ alias ycg='yarn codegen'
 alias ys='yarn start'
 alias ysb='yarn storybook'
 alias ybys='yarn build && yarn start'
+alias yd='yarn dev'
+
+# npm
+alias nr='npm run'
 
 # Docker:
 alias dock='docker-compose pull && docker-compose up'
 
 # General:
 alias destroy='sudo rm -rf'
-alias test='echo test'
-alias python='python3'
 alias patrick='cd ~/Code/tutorials/WEB3/FFC/PatrickLearnWeb3-JS/full-blockchain-solidity-course-js'
 
 # Git:
 alias gac='gaa && gcmsg'
 
 # Subquery Projects:
-alias subquery='cd code/subquery'
-alias explorer='cd ~/code/subquery/projects/subquery-explorer'
-alias console='cd code/subquery/projects/HOSTED_SERVICES/subquery-console'
-alias website='cd ~/code/subquery/projects/subquery-website'
-alias ui-library='cd ~/Code/subQuery/Projects/LIBRARIES/subquery-ui'
-alias libraries='cd ~/code/subquery/projects/libraries'
+alias subquery='cd ~/Code/Subquery/Repos/'
+alias explorer='cd ~/Code/Subquery/Repos/subquery-explorer'
+alias console='cd ~/Code/Subquery/Repos/subquery-console-v2'
+alias website='cd ~/Code/Subquery/Repos/subquery-website'
+alias ui-library='cd ~/Code/Subquery/Repos/ui-library'
+alias subquery-ui='cd ~/Code/Subquery/Repos/subquery-ui'
+
+# onfinality:
+alias mx-console='cd'
+
+# rust
+alias rusty='/Users/tane/Code/RUST/projects'
+alias cr='cargo run'
+alias ci='cargo init'
+alias ct='cargo test'
+alias ct='cargo test'
+
+# kube
+alias k9s-eth='k9s -n ws-6974569908718837760'
 
 # New:
-alias yd='yarn dev'
