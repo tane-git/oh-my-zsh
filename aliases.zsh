@@ -12,7 +12,12 @@ nt () {
   git fetch && "$1"
 }
 
-alias aliases='code /Users/tane/.oh-my-zsh/custom'
+# History Grep
+function hg {
+  history | rg "$1"
+}
+
+alias aliases='vim /Users/tane/.oh-my-zsh/custom/aliases.zsh'
 
 # Yarn:
 alias yi='yarn install'
@@ -58,4 +63,9 @@ alias ct='cargo test'
 # kube
 alias k9s-eth='k9s -n ws-6974569908718837760'
 
-# New:
+# New:alias h='history'
+alias h='history'
+alias cwd='pwd | pbcopy'
+alias ngapp='cd /Users/tane/code/ANGULAR/app'
+alias dn='dotnet'
+alias kube='kubectl'
